@@ -1,4 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --green: hsl(87, 100%, 70%);
+  --dark: hsl(234, 17%, 12%);
+  --grey: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Space Grotesk', sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 2rem 0 2rem;
+  background-color: white;
+}
+
+h1 {
+  font-size: 4.3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button {
+  background-color: transparent;
+  padding: 2rem 3.5rem;
+  border-radius: 1.4rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+header {
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.logo {
+  width: 14.4rem;
+  
+}
+
+.hero {
+  flex-direction: column;
+}
+
+.hero-content img {
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+
+.hero-content button {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--dark);
+  border-radius: 1.4rem;
+  margin-top: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media(min-width:890px){
+  nav {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
 }
