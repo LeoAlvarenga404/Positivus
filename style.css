@@ -71,6 +71,12 @@ nav ul {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  transition: 1s;
 }
 
 nav button {
@@ -102,7 +108,7 @@ header {
   margin-bottom: 2.2rem;
 }
 
-.hero-content button {
+ .hero-content button {
   width: 100%;
   max-width: 50rem;
   font-size: 2rem;
@@ -169,16 +175,13 @@ header {
 }
 
 figure {
+  position: relative
+  ;
   padding: 5rem;
   background-color: var(--grey);
   border-radius: 4.5rem;
   border: 1px solid var(--dark);
   box-shadow: 0px 4px 0 var(--dark);
-}
-
-
-.card {
-  position: relative;
 }
 
 .card h3 {
@@ -198,6 +201,7 @@ figure {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  padding: 5rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -219,6 +223,59 @@ figure:nth-child(5) {
 }
 figure:nth-child(6) {
   background-color: var(--dark);
+}
+
+.happen {
+  display: flex;
+  gap: 2rem;
+
+  margin-top: 7rem;
+  padding: 5rem;
+  background-color: var(--grey);
+  border-radius: 4.5rem;
+
+
+}
+
+.happen-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.happen-text button span {
+  display: none;
+}
+
+.happen-img {
+  display: none;
+} 
+
+.happen button {
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--dark);
+  border-radius: 1.4rem;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 698px) {
+  .arrow-card h4 {
+    opacity: 1;
+  }
 }
 
 
@@ -256,15 +313,40 @@ figure:nth-child(6) {
 
   .logos-1 {
     justify-content: space-around;
-    margin-right: 10rem;
+   
     
   }
 
   .logos-2 {
     justify-content: space-around;
-    margin-right: -10rem;
+   
+  }
+
+  .happen {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .happen-text {
+    max-width: 50rem;
+  }
+  .happen-text button {
+    max-width: 40rem;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .happen-text button span {
+    display: inline;
   }
 }
+
 
 @media (min-width: 1080px) {
   body {
@@ -358,6 +440,38 @@ figure:nth-child(6) {
   .logos-1, .logos-2 {
   justify-content: space-around;
   }
+  .arrow-card {
+    
+   
+    bottom: 0;
+    left: 0;
+    font-size: 5rem;
+  }
+
+  .happen {
+    max-height: 30rem;
+    position: relative;
+    justify-content: space-between;
+    max-width: 110rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+  }
+
+  .happen-text {
+    justify-content: space-between;
+    width: 40rem;
+  }
+
+  .happen-img {
+    position: absolute;
+    display: block;
+    top: -3rem;
+    right: -5rem;
+  } 
+
+  .happen button {
+    width: 30rem;
+  }
   }
 
 
@@ -372,4 +486,36 @@ figure:nth-child(6) {
     width: 50rem;
    
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .arrow-card h4 {
+    opacity: 1;
+  }
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-card h3 {
+    white-space: nowrap;
+  }
+  .img-card {
+    height: 20rem;
+    width: auto;
+  }
+ 
 }
