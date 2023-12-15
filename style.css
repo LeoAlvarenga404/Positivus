@@ -89,11 +89,13 @@ header {
 
 .hero-content img {
   width: 100%;
+  min-width: 20rem;
   margin-bottom: 2.2rem;
 }
 
 .hero-content button {
   width: 100%;
+  max-width: 50rem;
   font-size: 2rem;
   padding: 2rem;
   font-weight: 400;
@@ -105,11 +107,126 @@ header {
   cursor: pointer;
 }
 
-@media(min-width:890px){
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1079px) {
+  nav {
+    display: inline;
+    flex-wrap: wrap;
+    
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .hero-content img {
+    width: 50rem;
+  }
+
+  }
+
+@media (min-width: 1080px) {
+  body {
+    padding: 3rem 10rem 0 10rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+
   nav {
     display: block;
   }
   .menu {
     display: none;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+      'h1 img'
+      'h4 img'
+      'button img';
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 7rem;
+    
+  }
+
+  .hero-content h1,
+  .hero-content h4,
+  .hero-content button {
+    width: 100%;
+  }
+
+  .hero-content img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-content button {
+    margin: 0;
+    padding: 2rem 3.5rem;
+    border-radius: 1.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    max-height: 7rem;
+    max-width: 25rem;
+    margin-top: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1303px) and (max-width: 1700px) {
+
+  .hero-content h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content h4 {
+    width: 50rem;
+    height: 8rem
   }
 }
