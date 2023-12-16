@@ -6,26 +6,28 @@
   <title>Positivus - Figma</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="main.js" defer></script>
+  <script src="scroll.js" defer></script>
 </head>
 <body>
-   <section> <!-- header -->
+   <section class=""> <!-- header -->
     <header class="flex pd-mobile">
       <a href="#"><img class="logo" src="assets/positivus.svg" alt=""></a>
-      <nav>
+      <nav class="hidden">
         <ul class="flex">
-          <li>About us</li>
-          <li>Services</li>
-          <li>Use Cases</li>
-          <li>Pricing</li>
-          <li>Blog</li>
-          <li><button>Request a quote</button></li>
+          <li><a href="">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Blog</a></li>
+          <li class="hidden"><button>Request a quote</button></li>
         </ul>
       </nav>
       <img class="menu"src="assets/menu.svg" alt="">
     </header>
   </section>
   <main>
-    <section> <!-- hero -->
+    <section class=""> <!-- hero -->
       <div class="hero flex pd-mobile">
         <div class="hero-content">
           <h1>Navigating the digital landscape for success</h1>
@@ -37,7 +39,7 @@
         </div>
       </div>
     </section>
-  <section> <!-- logos -->
+  <section class="opacity"> <!-- logos -->
     <div class="logos">
       <div class="logos-1">
         <img src="assets/logos/amazon.svg" alt="">
@@ -51,13 +53,13 @@
       </div>
     </div>
   </section>
-  <section> <!-- services -->
+  <section id="services" class="opacity"> <!-- services -->
     <div class="services pd-mobile">
       <h2>Services</h2>
       <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
     </div>
   </section>
-  <section class="cards pd-mobile"> <!-- cards -->
+  <section class="cards pd-mobile opacity"> <!-- cards -->
     <figure>
       <div class="card">
         <div class="title-card">
@@ -149,7 +151,7 @@
       </div>
     </figure>
   </section>
-  <section class="pd-mobile"> <!-- happen -->
+  <section class="pd-mobile opacity"> <!-- happen -->
     <div class="happen">
       <div class="happen-text">
         <h3>Let's make things happen</h3>
@@ -161,12 +163,103 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="services">
+  <section id="use-cases" class="opacity">
+    <div class="services pd-mobile">
       <h2>Case Studies</h2>
       <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
     </div>
   </section>
+  <section class="collapse-master pd-mobile opacity">
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>01</span>
+          <h4>Consultation</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>02</span>
+          <h4>Research and Strategy Development</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>03</span>
+          <h4>Implementation</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>04</span>
+          <h4>Monitoring and Optimization</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>05</span>
+          <h4>Reporting and Communication</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+    <div class="collapse-container">
+      <div class="collapse">
+        <div class="collapse-text">
+          <span>06</span>
+          <h4>Continual Improvement</h4>
+        </div>
+        <div class="colapse-button">
+          <i class="active ph-bold ph-plus"></i>
+        </div>
+    </div>
+    <div class="collapse-click hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad numquam assumenda magnam provident blanditiis vero, quas commodi, quisquam reprehenderit, iste repellendus omnis qui natus suscipit asperiores aut itaque dolorum.</p>
+    </div>
+  </div>
+  </section>
+  <section id="services" class="opacity"> <!-- services -->
+    <div class="services pd-mobile">
+      <h2>Team</h2>
+      <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+    </div>
   </main>
   <footer></footer>
 </body>
