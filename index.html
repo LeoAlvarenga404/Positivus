@@ -18,8 +18,8 @@
           <li><a href="">About us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#use-cases">Use Cases</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Blog</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li class="hidden"><button>Request a quote</button></li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
             <img src="assets/main.svg" alt="">
           </div>
           <h4 id="h4-hero">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</h4>
-          <button class="dark-button">Book a consultation</button
+          <button id="first-button" class="dark-button">Book a consultation</button
         </div>
       </div>
     </section>
@@ -200,7 +200,7 @@
   </section>
   <section id="services" class="opacity"> <!-- services -->
     <div class="services pd-mobile">
-      <div>
+      <div id="process">
         <h2 style="margin-bottom: 0;">Our Working<span> Process</span></h2> <br>
         <h2>Process</h2>
       </div>
@@ -473,7 +473,7 @@
       <a href="#slide-3"></a>
       <a href="#slide-4"></a>
       <a href="#slide-5"></a>
-      <i id="next-button" class="ph-bold ph-arrow-right"></i>
+      <i  id="next-button" class="ph-bold ph-arrow-right"></i>
     </div>
     
   </div>
@@ -484,7 +484,83 @@
       <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
     </div>
   </section>
+  <section class="pd-mobile"> <!-- Contact Us-->
+    <div class="contact-container">
+      <div class="contact">
+        <div class="checkbox">
+          <div class="check">
+          <label for="say">Say Hi</label>
+          <input  id="say" type="checkbox">
+        </div>
+        <div class="check">
+          <label for="get">Get a Quote</label>
+          <input  id="get" type="checkbox">
+        </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Name">
+
+          <label for="email">Email*</label>
+          <input id="email" type="email" placeholder="Email">
+
+          <label for="name">Message*</label>
+          <textarea name="name" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <button class="hidden dark-button">Send Message</button>
+      </div>
+      <div class="contact-img">
+        <img src="assets/contact.png" alt="">
+      </div>
+    </div>
+    <button class="button-out dark-button">Send Message</button>
+  </section>
   </main>
-  <footer></footer>
+  <footer id="blog">
+    <div class="footer-container">
+    <div class="footer-header">
+      <img class="footer-header-img" src="assets/positivus.svg" alt="">
+      <div class="footer-nav">
+        <div class="footer-li">
+          <li>About Us</li>
+          <li> Services</li>
+          <li>Use Cases</li>
+          <li>Pricing</li>
+          <li> Blog</li>
+        </div>
+      </div>
+      <div class="social-media">
+        <img src="assets/logos/linkedin-footer.svg" alt="">
+        <img src="assets/logos/facebook-footer.svg" alt="">
+        <img src="assets/logos/twitter-footer.svg" alt="">
+      </div>
+     </div>
+     <div class="footer-main">
+     <div class="footer-contact">      
+      <h4>Contact us</h4>
+      <div class="footer-p">
+        <p>Email: info@positivus.com</p>
+        <p>Phone: 555-567-8901</p>
+        <p>Address: 1234 Main St</p>
+      </div>
+        <p>Moonstone City, Stardust State 12345</p>
+     </div>
+     <div class="footer-email">
+      <input type="text" placeholder="Email">
+      <button>Subscribe to news</button>
+     </div>
+    </div>
+    <div class="social-media-2">
+      <img src="assets/logos/linkedin-footer.svg" alt="">
+      <img src="assets/logos/facebook-footer.svg" alt="">
+      <img src="assets/logos/twitter-footer.svg" alt="">
+    </div>
+    <div class="footer-footer">
+      <p>© 2023 Positivus. All Rights Reserved.</p>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
+
