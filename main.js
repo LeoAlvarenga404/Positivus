@@ -12,7 +12,8 @@ activeElements.forEach(active => {
     
     collapseClick.classList.toggle('hidden');
     collapseContainer.classList.toggle('green');
-  });
+
+  }); 
 });
 
 
