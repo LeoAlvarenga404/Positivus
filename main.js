@@ -1,5 +1,4 @@
 
-
 const menu = document.querySelector('.menu')
 const nav =  document.querySelector('header nav')
 
@@ -15,7 +14,6 @@ activeElements.forEach(active => {
 
   }); 
 });
-
 
 menu.addEventListener('click', () => {
   nav.classList.toggle('hidden')
